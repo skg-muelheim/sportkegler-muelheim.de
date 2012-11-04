@@ -407,22 +407,28 @@ skgmh.recalculateValues = function () {with(skgmh){
         for(var j=0; j < 8; j++) {
             var gtemp = datapointers[temp.id+'_GassenLP'].getValue()[j];
             if (j % 2 == 0) {
-                temp.volle += gtemp; 
+                temp.volle += parseInt(gtemp); 
             }else {
-                temp.raeumen += gtemp;
+                temp.raeumen += parseInt(gtemp);
             }
             if (gtemp && gtemp != '') {
                 gespielte_gassen++;
             }
         }
         
-        
-        temp = {id: 'G'+(i+1), mannschaft:'G'}
+        var temp = {id: 'G'+(i+1), mannschaft:'G'}
         temp.lp = +(datapointers[temp.id+'_LP'].getValue());
         punkteBerechunung[(i*2)+1] = temp;
         g_lp += temp.lp;
+        temp.volle = 0;
+        temp.raeumen = 0;
         for(var j=0; j < 8; j++) {
             var gtemp = datapointers[temp.id+'_GassenLP'].getValue()[j];
+            if (j % 2 == 0) {
+                temp.volle += parseInt(gtemp); 
+            }else {
+                temp.raeumen += parseInt(gtemp);
+            }
             if (gtemp && gtemp != '') {
                 gespielte_gassen++;
             }
