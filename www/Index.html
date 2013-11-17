@@ -1,38 +1,137 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>This page contains frames.</title>
-<meta name="namo-theme" content="Theme\Smart\Smart04">
-<style><!--
-body { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); }
-h1 { font-family:±¼¸²; font-size:14px; color:rgb(49,154,213); text-decoration:underline; }
-h2 { font-family:±¼¸²; font-size:12px; text-decoration:underline; }
-p.namo-list { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); }
-p.namo-sublist { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); }
-table.namo-table { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); border-width:1; border-color:rgb(82,162,206); border-style:double; }
-table.namo-table td { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); background-color:rgb(244,244,244); }
-table.namo-table th { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); background-color:rgb(229,241,249); }
-span.namo-link, a:link { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); }
-span.namo-visited, a:visited { font-family:±¼¸²; font-size:12px; color:rgb(125,102,173); }
-span.namo-active, a:active { font-family:±¼¸²; font-size:12px; color:rgb(80,146,208); }
-a:hover { font-family:±¼¸²; font-size:12px; color:rgb(94,94,94); text-decoration:underline; }
-li.namo-list1 { list-style-image:url('nav/bullet1.gif'); }
-li.namo-list2 { list-style-image:url('nav/bullet2.gif'); }
---></style>
-<base target="_blank"></head>
+  <head>
+    <title>SKG MH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
 
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/skg.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" src="jquery/jquery-1.9.1.js"></script>
+    <script language="javascript" src="jsmart/smart-2.9.min.js"></script>
 
-<frameset rows="12%, 5%, 83%">
-    <frame src="Banner.htm" noresize>
-    <frame src="MenueKopf.htm">    <frameset cols="20%, 80%">
-        <frame src="Menuelinks.htm" noresize namo_target_frame="detail">
-        <frame src="file:///D|/_SKG/Haupt.htm" name="_Haupt" namo_target_frame="_Haupt" noresize>
-    </frameset>
-    <noframes>
-    <body>
-    <p>This page contains frames. You need a Web browser that supports frames 
-    to view this page.</p>
-    </body>
-    </noframes>
-</frameset>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+      
+<!-- google analytics-->
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25963542-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>    
+  </head>
+<body>
+    <a href="#content" class="sr-only">Skip to main content</a>
+    <div id="insert-skg-nav-here"></div>
+<script>
+   //use jQuery .get() function
+   $.get(
+      'tpls/my.tpl.html',
+      function(tplText) { 
+         var t = new jSmart(tplText);
+         $("#insert-skg-nav-here").html(t.fetch({active:'home'}));
+      }
+   );
+</script>
+
+    <!-- Carousel
+    ================================================== -->
+      
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+  <!-- Bild 1 -->  
+  <div class="item active">
+          <img src="bilder/kegelzentrum/gaststaette01.jpg" alt="First slide" width="600" class="skg-carousel">
+      <div class="carousel-caption">
+            <h6> 1 </h6> 
+                   
+      </div>
+    </div>
+  <!-- Bild 2 -->  
+    <div class="item">
+          <img src="bilder/kegelzentrum/kegelzentrumeingang.jpg" alt="First slide" width="900" class="skg-carousel">
+      <div class="carousel-caption">
+            <h1> Eingang zum Kegelzentrum </h1>            
+      </div>
+    </div>
+  <!-- Bild 3 -->
+    <div class="item">
+          <img src="bilder/kegelzentrum/untergeschossbahnen01.jpg" alt="First slide" width="900" class="skg-carousel">
+      <div class="carousel-caption">
+            <h1> Untergeschoss </h1>
+
+      </div>
+    </div>
+  <!-- Bild 4 -->  
+    <div class="item">
+          <img src="bilder/kegelzentrum/untergeschossbahnen02.jpg" alt="First slide" width="900" class="skg-carousel">
+      <div class="carousel-caption">
+            <h1> Untergeschoss </h1>
+      </div>
+    </div>
+  <!-- Bild 5 -->
+    <div class="item">
+          <img src="bilder/kegelzentrum/obergeschoss01.jpg" alt="First slide" width="900" class="skg-carousel">
+      <div class="carousel-caption">
+            <h1> Obergeschoss </h1>
+      </div>
+    </div>
+  <!-- Bild 6 -->
+    <div class="item">
+          <img src="bilder/kegelzentrum/obergeschoss02.jpg" alt="First slide" width="900" class="skg-carousel">
+      <div class="carousel-caption">
+              
+              <h1> Obergeschoss </h1>
+      </div>
+    </div>
+ --
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+<!-- /.carousel -->
+
+<a id="content"/>
+  <div class="container">
+    <br><h1>
+      <p align="center"><font size="5" color="#7891B1">
+      Sportkegler Gemeinschaft e.V. M&uuml;lheim a.d. Ruhr
+      </br><font size="3">
+      Rot-Wei&szlig; 59 M&uuml;lheim &nbsp;&nbsp;- &nbsp;&nbsp;Blau-Wei&szlig; 61 M&uuml;lheim &nbsp;&nbsp;- &nbsp;&nbsp;KSC 71 Saarn
+      </font></p></h1>
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
