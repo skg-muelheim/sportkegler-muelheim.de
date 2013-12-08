@@ -1,0 +1,36 @@
+
+    
+    <head> … </head>
+    <body>
+        <div id="main"> … </div>
+        <div id="sbOverlay" style="display: none;"></div>
+        <div id="sbCenter" style="display: none;"> … </div>
+        <div id="sbBottomContainer" style="display: none;"> … </div>
+        <div class="pp_pic_holder pp_default" style="top: 56.5px; left: 152px; display: block; width: 832px;">
+            <div class="ppt" style="opacity: 1; display: block; width: 800px;"> … </div>
+            <div class="pp_top"> … </div>
+            <div class="pp_content_container">
+                <div class="pp_left">
+                    <div class="pp_right">
+                        <div class="pp_content" style="height: 573px; width: 800px;">
+                            <div class="pp_loaderIcon" style="display: none;"></div>
+                            <div class="pp_fade" style="display: block;">
+                                <a class="pp_expand" title="Expand the image" href="#" style="display: none;"> … </a>
+                                <div class="pp_hoverContainer" style="height: 533px; width: 800px;">
+                                    <a class="pp_next" href="#"> … </a>
+                                    <a class="pp_previous" href="#"> … </a>
+                                </div>
+                                <div id="pp_full_res"> … </div>
+                                <div class="pp_gallery" style="margin-left: -85.5px; display: none;"> … </div>
+                                <div class="pp_details" style="width: 800px;"> … </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pp_bottom"> … </div>
+        </div>
+        <div class="pp_overlay" style="opacity: 0.8; height: 1161px; width: 1136px; display: block;"></div>
+    </body>
+
+</html>

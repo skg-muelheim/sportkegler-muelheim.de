@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>SKG MH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="skg.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" src="jquery/jquery-1.9.1.js"></script>
+    <script language="javascript" src="jsmart/smart-2.9.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25963542-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>    
+  </head>
+  <body>
+    <a href="#content" class="sr-only">Skip to main content</a>
+    <div id="insert-skg-nav-here"></div>
+<script>
+   //use jQuery .get() function
+   $.get(
+      'tpls/my.tpl.html',
+      function(tplText) { 
+         var t = new jSmart(tplText);
+         $("#insert-skg-nav-here").html(t.fetch({active:'impressum'}));
+      }
+   );
+</script>
+<a name="content"/>
+
+<div class="container">
+
+<p align="center"><font color="black"><span style="font-size:16pt;">&nbsp;</span></font></p>
+<p align="center"><span style="font-size:16pt;">Sportkegler Gemeinschaft e.V. Mülheim a.d. Ruhr </span></p>
+<p align="center"><span style="font-size:12pt;">Rot-Weiß 59 Mülheim &nbsp;&nbsp;- &nbsp;&nbsp;Blau-Weiß 61 Mülheim &nbsp;&nbsp;- &nbsp;&nbsp;KSC 71 Saarn</span></p>
+
+<hr>
+<p align="center"><span style="font-size:16pt;"><font color="black">Impressum</font></span><font color="black"></font></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Webmaster </font></span></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Henry Hentschel //&nbsp;Unterstr. 68 
+//&nbsp;45359 Essen</font></span></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Email : </font><a href="mailto:SKG-MH@gmx.de"><font color="black">SKG-MH-Webmaster</font></a><font color="black"></font></span></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Tel. Festnetz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0201/8695103 </font></span></p>
+<p align="center"> <span style="font-size:12pt;"><font color="black">Tel. Handy D2&nbsp;&nbsp;  0172/2876873</font></span></p>
+<hr>
+<p align="center"><span style="font-size:12pt;"><font color="black">Zähler von Hermawan Haryanto : (</font><a href="http://hermawan.dmonster.com"><font color="black">hermawan.dmonster.com</font></a><font color="black">)</font></span><font color="black"></font></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Newsticker für &quot;Was ist neu? : &quot; von Werner Zenk auf </font><a href="http://www.homepage-total.de/php/last-update.php"><font color="black">http://www.homepage-total.de/php/last-update.php</font></a><font color="black"></font></span></p>
+<p align="center"><span style="font-size:12pt;"><font color="black">Forum : &nbsp;&nbsp;</font><a href="http://forumprofi.de"><font color="black">http://forumprofi.de</font></a></span></p>
+<hr>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/jquery-1.9.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
