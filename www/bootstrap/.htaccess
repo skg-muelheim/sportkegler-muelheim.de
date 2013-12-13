@@ -22,3 +22,5 @@ FileETag MTime Size
 ExpiresActive On
 ExpiresDefault A86000
 </IfModule>
+
+Header append Cache-Control "public"

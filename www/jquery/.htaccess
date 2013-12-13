@@ -20,3 +20,4 @@ FileETag MTime Size
 
 ExpiresActive On
 ExpiresDefault A86000
+Header append Cache-Control "public"

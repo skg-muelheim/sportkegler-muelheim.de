@@ -21,3 +21,5 @@ FileETag MTime Size
 ExpiresActive On
 ExpiresDefault A7200
 ExpiresByType text/html A7200
+
+Header append Cache-Control "public"
