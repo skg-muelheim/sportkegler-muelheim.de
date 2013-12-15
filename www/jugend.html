@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>Ranglistenturnier 13/14</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="skg.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" src="jquery/jquery-1.9.1.js"></script>
+    <script language="javascript" src="jsmart/smart-2.9.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25963542-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>    
+   <a href="#content" class="sr-only">Skip to main content</a>
+    <div id="insert-skg-nav-here"></div>
+<script>
+   //use jQuery .get() function
+   $.get(
+      'tpls/my.tpl.html',
+      function(tplText) { 
+         var t = new jSmart(tplText);
+         $("#insert-skg-nav-here").html(t.fetch({active:'impressum'}));
+      }
+   );
+</script>
+
+<div class="container"> 
+    <br><hr><h1>
+      <p align="center"><font size="5" color="#7891B1">
+      <u>Sportkegler Gemeinschaft M&uuml;lheim a.d. Ruhr e.V.</u><font size="1">
+<br><br>
+<font size="3">
+<a href="rw59muelheim.html">Rot&nbsp;Wei&szlig;&nbsp;59&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="bw61muelheim.html">Blau&nbsp;Wei&szlig;&nbsp;61&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="ksc71saarn.html">KSC&nbsp;71&nbsp;Saarn</a> &nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="jugend.html">SKG&nbsp;Jugend</a>
+<font size="1"><hr></font></font></p></h1></div>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" language="JavaScript">
+<!--
+var wechselzeit = 3000;
+
+ImageArr = new Array()
+
+ImageArr[ImageArr.length] = "bilder/sportkegler/img_per_ma_kid_160x160.png";
+ImageArr[ImageArr.length] = "bilder/sportkegler/img_per_ma_kid_160x160.png";
+
+var xAnzahl = ImageArr.length;
+var xCounter=-1;
+
+function bildwechsel01() {
+xCounter = xCounter+1;
+  if (xCounter < xAnzahl) {
+     document.getElementById('foto01').src = ImageArr[xCounter];
+     setTimeout ("bildwechsel01()",wechselzeit);
+     }
+  else {
+     xCounter = -1;
+     bildwechsel01();
+     }}
+setTimeout('bildwechsel01()', 10);
+-->
+</script>
+
+<!-- öffnet PDF-Datein -->
+<script language="JavaScript"> 
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable, centered)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+
+  cookie_str = document.cookie;
+  cookie_str.toString();
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_end    = cookie_str.indexOf('=', pos_start);
+
+  cookie_name = cookie_str.substring(pos_start, pos_end);
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_start  = cookie_str.indexOf('=', pos_start);
+  pos_end    = cookie_str.indexOf(';', pos_start);
+  
+  if (pos_end <= 0) pos_end = cookie_str.length;
+  cookie_val = cookie_str.substring(pos_start + 1, pos_end);
+  if (cookie_name == name && cookie_val  == "done")
+    return;
+
+  if (centered) {
+    left = (screen.width / 2) - (width / 2);
+    top = (screen.height / 2) - (height / 2);
+  }
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+-->
+</script>
+</head>
+<Body>
+<p align="center"><font size="5">SKG-Jugend Rheinland</font></p>
+<!-- <img id="foto01" src="" width="75" height="100" border="0"></font><br>
+Mitglieder -->
+<hr>
+<p href="http://wkvjugend.de/sport/rheinland/2013/ranking_u18_ergebnisse.pdf" target="_blank" class="external"><p align="center"><a href="javascript:na_open_window('win', 'http://wkvjugend.de/sport/rheinland/2013/ranking_u18_ergebnisse.pdf', 0, 0, 300, 200, 0, 0, 0, 0, 0)" target="_self"><font size="5" color="black">U18</font></a></p>
+<p align="center"><font size="5">Jugend-Ranking weiblich - 2. Durchgang</font></p>
+
+<p align="center"><font size="3">Alina Nolte ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 4 - ges. 185 Punkten u. 2729 Holz ) </font></p>
+
+<p align="center"><font size="3">Sabrina Kolba ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 5 - ges. 183 Punkten u. 2722 Holz ) </font></p>
+
+<p align="center"><font size="3">Stella Zimmermann ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 8 - ges. 164 Punkten u. 2162 Holz )&nbsp;</font></p>
+
+<p align="center"> <font size="3">u. Kerstin Erwied ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 12 - ges. 120 Punkten u. 1600 Holz ) </font></p>
+
+<p align="center"> <font size="5">Jugend-Ranking m&auml;nnlich - 2. Durchgang -</font><font size="3"></font></p>
+
+<p align="center"> <font size="3" color="black">Marwin Panneck ( z.Z. Platz 2 - ges.187 Punkten u. 2948 Holz ) </font><font size="3"></font></p>
+
+<p align="center">  <font size="3">u. Marcel
+Panneck ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 3 - ges.169Punkten u. 2872 Holz ) </font><font size="5"></font></p>
+
+<p align="center"> <font size="3">Torben Dziura ( </font><font size="3" color="black">z.Z. </font><font size="3">Platz 4 - ges. 186 Punkte u. 2884 Holz )</font></p>
+
+<hr>
+<p align="center"><a href="javascript:na_open_window('win', 'http://wkvjugend.de/sport/rheinland/2013/ranking_u14_ergebnisse.pdf', 0, 0, 300, 200, 0, 0, 0, 0, 0)" target="_self" class="external"><font size="5" color="black">U14</font></a><font size="5"></font></p>
+<p align="center"> <font size="5">Jugend-Ranking &nbsp;weiblich -3. Durchgang</font><font size="5"> -</font></p>
+
+<p align="center"> <font size="3" color="black">Laura Panneck&nbsp;( z.Z. Platz 10 - ges.1317 Holz )</font></p>
+
+</body>
+</html>

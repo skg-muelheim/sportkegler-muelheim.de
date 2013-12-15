@@ -1,0 +1,9 @@
+mod_gzip_on Yes
+
+# Caching einrichten
+
+FileETag MTime Size
+
+ExpiresActive On
+ExpiresDefault A7200
+ExpiresByType text/html A7200
