@@ -60,37 +60,7 @@
 
 <script language="JavaScript">
 <!--
-function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable, centered)
-{
-  toolbar_str = toolbar ? 'yes' : 'no';
-  menubar_str = menubar ? 'yes' : 'no';
-  statusbar_str = statusbar ? 'yes' : 'no';
-  scrollbar_str = scrollbar ? 'yes' : 'no';
-  resizable_str = resizable ? 'yes' : 'no';
-
-  cookie_str = document.cookie;
-  cookie_str.toString();
-
-  pos_start  = cookie_str.indexOf(name);
-  pos_end    = cookie_str.indexOf('=', pos_start);
-
-  cookie_name = cookie_str.substring(pos_start, pos_end);
-
-  pos_start  = cookie_str.indexOf(name);
-  pos_start  = cookie_str.indexOf('=', pos_start);
-  pos_end    = cookie_str.indexOf(';', pos_start);
-  
-  if (pos_end <= 0) pos_end = cookie_str.length;
-  cookie_val = cookie_str.substring(pos_start + 1, pos_end);
-  if (cookie_name == name && cookie_val  == "done")
-    return;
-
-  if (centered) {
-    left = (screen.width / 2) - (width / 2);
-    top = (screen.height / 2) - (height / 2);
-  }
-  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
-}</script>
+</script>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -127,6 +97,43 @@ function na_open_window(name, url, left, top, width, height, toolbar, menubar, s
       }
    );
 </script>
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable, centered)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+
+  cookie_str = document.cookie;
+  cookie_str.toString();
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_end    = cookie_str.indexOf('=', pos_start);
+
+  cookie_name = cookie_str.substring(pos_start, pos_end);
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_start  = cookie_str.indexOf('=', pos_start);
+  pos_end    = cookie_str.indexOf(';', pos_start);
+  
+  if (pos_end <= 0) pos_end = cookie_str.length;
+  cookie_val = cookie_str.substring(pos_start + 1, pos_end);
+  if (cookie_name == name && cookie_val  == "done")
+    return;
+
+  if (centered) {
+    left = (screen.width / 2) - (width / 2);
+    top = (screen.height / 2) - (height / 2);
+  }
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+
 </head>
 <body>
 
@@ -142,7 +149,7 @@ Bitte wendet euch zwecks Terminabsprache an unseren Gastwirt:<br>
 <b> Almir Tabaku </b></font><font size="5">(</font>sagt einfach <font size="5"><b>Mirco</b> </font> zu ihm <font size="5">)<br>
 Tel.:</font><b><font size="5"> </font><font size="5" face="Arial">0208/402381</font></b><font size="5"> </font><font size="3"> oder </font><font size="5"><b> 0176/24609805 </b><br>
 Er wird euch auch mit Speisen und Getr&auml;nke versorgen.<br>
-siehe hierzu die <b> --&gt;&gt; </b> <a href="lokal.html">Speise und Getr&amp;auml;nkekarte.</a></font></a><font size="5"> </font> <font size="5">&lt;--</font> <br>
+siehe hierzu die <b> --&gt;&gt; </b> <a href="#lokal">Speise und Getr&auml;nkekarte.</a></font></a><font size="5"> </font> <font size="5">&lt;--</font> <br>
 
 <p align="center"></p>
 <table width="718" cellpadding="0" cellspacing="0" align="center">
@@ -160,9 +167,8 @@ siehe hierzu die <b> --&gt;&gt; </b> <a href="lokal.html">Speise und Getr&amp;au
         </td>
     </tr>
     </table>
-<p align="center"><u>Die Kegelhalle ist gut erreichbar mit :</u><br>
-Bus (Linie 122 bis Hauskampstr.) + Fu&szlig;weg 5 Min<br>
-Bus (Linie 129 bis Hauskampstr.) + Fu&szlig;weg 5 Min<br>
+<p align="center"><font size="4"><u>Die Kegelhalle ist gut erreichbar mit :</u><br>
+Bus (Linie 122 u. 129 bis Hauskampstr.) + Fu&szlig;weg 5 Min<br>
 Stra&szlig;enbahn (Linie 110 bis Friesenstr.) + Fu&szlig;weg 5 Min<br>
 S-Bahn ( S1 u. S2 bis Bf Mh-Styrum) + Fu&szlig;weg 8 Min)<br>
 oder mit dem Auto bis Parkplatz Sportplatz Moritzstr.+ Fu&szlig;weg 2 Min<br>
@@ -178,7 +184,7 @@ Die <b>Damen &gt; Rot-Wei&szlig; 59 M&uuml;lheim &lt; </b>und <br>
 die <b>  Herren &gt; KSC 71 Saarn &lt;</b><br>
 suchen Sportbegeisterte zwischen ab 10 Jahren<br>
 Vorkenntnisse im Kegelsport sind nicht erforderlch.<br>
-Kosten f&uuml;r passive Mitgliedschaft 10&euro; pro Monat<br><br>
+Kosten f&uuml;r passive Mitgliedschaft 10€ pro Monat<br><br>
 Sportbereich im Obergeschoss<br>
 <table width="752" align="center" cellpadding="0" cellspacing="0">
     <tr>
@@ -190,6 +196,24 @@ Sportbereich im Obergeschoss<br>
 <p align="center"><font size="5">
 Ort: M&uuml;lheim-Styrum / Moritzstr. 45a
 <br>
-Kontakt (Henry Hentschel) 0201/8695103 <br> 
+Kontakt (Henry Hentschel) 0201/8695103 </p>
+<p><a name="#lokal"></a></p><br>
+<hr><b>
+<p align="center"><font size="6">Getränke- u. Speise-Karte</font></b></p>
+<p align="center">Gastwirt <b><font size="5">&nbsp;Almir Tabaku ( </font><font size="4">oder einfach</font><font size="5">&nbsp;Mirco ) </font></b></p>
+<p align="center">sagt <font size="5">&quot; Herzlichst Willkommen &quot;</font> </p>
+<p align="center"><img src="bilder/speisekarte/gutenappetit.jpg" width="250" height="122" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/menue.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/speisekarte001.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/speisekarte002.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/speisekarte003.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/speisekarte004.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/getraenkekarte001.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/getraenkekarte002.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><img src="bilder/speisekarte/getraenkekarte003.jpg" width="600" height="1133" border="0"></p>
+<p align="center"><a href="javascript:na_open_window('win', 'dokumente/SKG-Getraenke-Speisekarte.pdf', 0, 0, 300, 200, 0, 0, 0, 0, 0)" target="_self">Speise- u. Getränkeliste zum&nbsp;Downloden</a></p>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
