@@ -21,7 +21,6 @@
       
 <!-- google analytics-->
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-25963542-1']);
   _gaq.push(['_trackPageview']);
@@ -31,24 +30,12 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>    
-
-
-    <a href="#content" class="sr-only">Skip to main content</a>
-    <div id="insert-skg-nav-here"></div>
-<script>
-   //use jQuery .get() function
-   $.get(
-      'tpls/my.tpl.html',
-      function(tplText) { 
-         var t = new jSmart(tplText);
-         $("#insert-skg-nav-here").html(t.fetch({active:'home'}));
-      }
-   );
-</script>
 </head>
 <body>
+
+    <a href="#content" class="sr-only">Skip to main content</a>
+    <div class="insert-skg-template-here" template="my.tpl.html"></div>
 
     <!-- Carousel ========================= -->
       
@@ -120,21 +107,17 @@
 </div>
 <!-- /.carousel -->
 
-<a id="content"/>
+    <div class="insert-skg-template-here" template="sportheader.tpl.html"></div>
 
-<div class="container"> 
-    <hr><h1>
-      <p align="center"><font size="5" color="#7891B1">
-      <u>Sportkegler Gemeinschaft M&uuml;lheim a.d. Ruhr e.V.</u>
-<br>
-<font size="3">
-<a href="rw59muelheim.html">Rot&nbsp;Wei&szlig;&nbsp;59&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="bw61muelheim.html">Blau&nbsp;Wei&szlig;&nbsp;61&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="ksc71saarn.html">KSC&nbsp;71&nbsp;Saarn</a> &nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="jugend.html">SKG&nbsp;Jugend</a>
-</font></font></p></h1><hr></div> 
+    <a id="content"/>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-  </body>
+    
+    <!-- Templates austauschen etc. -->
+    <script src="js/skg.js"></script>
+
+<script>
+</script>
+    </body>
 </html>

@@ -59,3 +59,13 @@
 })
 
 }(window.jQuery)
+
+$(".insert-skg-template-here").each(function() {
+ var template = 'tpls/'+$(this).attr("template");
+ var insert = this;
+ $.get(template,
+  function(tplText) { 
+     var t = new jSmart(tplText);
+     $(insert).html(t.fetch({active:'home'}));
+  })
+});
