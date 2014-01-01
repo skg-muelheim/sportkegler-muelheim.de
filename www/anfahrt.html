@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<title>Sie brauchen einen Routenplaner?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/skg.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script language="javascript" src="jquery/jquery-1.9.1.js"></script>
+    <script language="javascript" src="jsmart/smart-2.9.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-25963542-1');  // Replace with your property ID.
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->      
+   <a href="#content" class="sr-only">Skip to main content</a>
+    <div id="insert-skg-nav-here"></div>
+<script>
+   //use jQuery .get() function
+   $.get(
+      'tpls/my.tpl.html',
+      function(tplText) { 
+         var t = new jSmart(tplText);
+         $("#insert-skg-nav-here").html(t.fetch({active:'info'}));
+      }
+   );
+</script>
+
+<div class="container"> 
+    <br><hr><h1>
+      <p align="center"><font size="5" color="#7891B1">
+      <u>Sportkegler Gemeinschaft M&uuml;lheim a.d. Ruhr e.V.</u><font size="1">
+<br><br>
+<font size="3">
+<a href="rw59muelheim.html">Rot&nbsp;Wei&szlig;&nbsp;59&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="bw61muelheim.html">Blau&nbsp;Wei&szlig;&nbsp;61&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="ksc71saarn.html">KSC&nbsp;71&nbsp;Saarn</a> &nbsp;&nbsp;- &nbsp;&nbsp;
+<a href="jugend.html">SKG&nbsp;Jugend</a>
+<font size="1"><hr></font></font></p></h1></div>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script language="JavaScript">
+<!--
+function na_open_window(name, url, left, top, width, height, toolbar, menubar, statusbar, scrollbar, resizable, centered)
+{
+  toolbar_str = toolbar ? 'yes' : 'no';
+  menubar_str = menubar ? 'yes' : 'no';
+  statusbar_str = statusbar ? 'yes' : 'no';
+  scrollbar_str = scrollbar ? 'yes' : 'no';
+  resizable_str = resizable ? 'yes' : 'no';
+
+  cookie_str = document.cookie;
+  cookie_str.toString();
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_end    = cookie_str.indexOf('=', pos_start);
+
+  cookie_name = cookie_str.substring(pos_start, pos_end);
+
+  pos_start  = cookie_str.indexOf(name);
+  pos_start  = cookie_str.indexOf('=', pos_start);
+  pos_end    = cookie_str.indexOf(';', pos_start);
+  
+  if (pos_end <= 0) pos_end = cookie_str.length;
+  cookie_val = cookie_str.substring(pos_start + 1, pos_end);
+  if (cookie_name == name && cookie_val  == "done")
+    return;
+
+  if (centered) {
+    left = (screen.width / 2) - (width / 2);
+    top = (screen.height / 2) - (height / 2);
+  }
+  window.open(url, name, 'left='+left+',top='+top+',width='+width+',height='+height+',toolbar='+toolbar_str+',menubar='+menubar_str+',status='+statusbar_str+',scrollbars='+scrollbar_str+',resizable='+resizable_str);
+}
+
+// -->
+</script>
+</head>
+
+
+<body><br><br>
+<p align="left"><img src="bilder/maps/anfahrtsskizze.jpg" align="left" width="536" height="481" border="1" alt="Anfahrtsskizze"> 
+&nbsp;&nbsp;&nbsp;&nbsp;
+<p align="left">&nbsp;</p>
+<p align="left"><font face="Arial"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><span style="font-size:16pt;">Du suchst einen Routenplaner ?</span></font></p>
+<div id="layer1" style="width:214px; height:166px; position:absolute; left:586px; top:139px; z-index:1; visibility:inherit;">
+    <p><span style="font-size:12pt;"><font face="Arial" color="black">Klicke 
+auf einen der folgenden: von  </font></span><a href="http://route.web.de/?id=V00-020901-*0gS0-00" target="_blank"><span style="font-size:12pt;"><font face="Arial" color="black">Web.de</font></span></a><span style="font-size:12pt;"><font face="Arial" color="black"><br>von 
+</font><a href="http://www.reiseplanung.de/inkdex.jsp" target="_blank"><font face="Arial" color="black">reiseplanung.de</font></a><font color="black"></font></span></p>
+    <p><span style="font-size:12pt;"><font face="Arial" color="black">f�r &nbsp;<b>Radfahrer </b>u.<b>&nbsp;&nbsp;Fu�g�nger</b> von </font><font color="black">.</font></span><a href="javascript:na_open_window('win', 'http://radservice.radroutenplaner.nrw.de/rrp/nrw/cgi', 0, 0, 300, 200, 0, 0, 0, 0, 0)" target="_self"><span style="font-size:12pt;"><font face="Arial" color="black">radroutenplaner.nrw.de</font></span></a><span style="font-size:12pt;"><font
+color="black"></font></span></p>
+    <p>&nbsp;<A href="http://maps.google.de/maps/ms?f=q&hl=de&geocode=&time=&date=&ttype=&ie=UTF8&mrt=kmlkmz&ei=yhU3R_b_Bp6G2wL1meSQDQ&sig2=2HmTivylwKSIgTOKKIkirw&cd=2&li=lmd&msa=0&msid=103946156759255890294.00043ea82f14dc3133774&ll=51.445937,6.850362&spn=0.002742,0.007821&z=17&om=1" target="_blank"><IMG height="49" alt="Zu Google Maps" 
+src="bilder/maps/maps_results_logo.gif" 
+width="136"></A></p>
+</div>
+<p align="left"><font face="Arial" color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p align="left"><font face="Arial" color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:10pt;">oder 
+nutze<br> </span></font></p>
+<p><span style="font-size:8pt;"><i><font face="Arial" color="white">
+</font></i></span></p>
+</body>
+</html>
