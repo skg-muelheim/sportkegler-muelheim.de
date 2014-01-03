@@ -25,46 +25,26 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-25963542-1');  // Replace with your property ID.
+ga('create', 'UA-25963542-1',{
+  'cookieDomain': 'www.sportkegler-muelheim.de'
+}); 
 ga('send', 'pageview');
 
 </script>
-<!-- End Google Analytics -->      
-   <a href="#content" class="sr-only">Skip to main content</a>
-    <div id="insert-skg-nav-here"></div>
-<script>
-   //use jQuery .get() function
-   $.get(
-      'tpls/my.tpl.html',
-      function(tplText) { 
-         var t = new jSmart(tplText);
-         $("#insert-skg-nav-here").html(t.fetch({active:'impressum'}));
-      }
-   );
-</script>
-
-<div class="container"> 
-    <br><hr><h1>
-      <p align="center"><font size="5" color="#7891B1">
-      <u>Sportkegler Gemeinschaft M&uuml;lheim a.d. Ruhr e.V.</u><font size="1">
-<br><br>
-<font size="3">
-<a href="rw59muelheim.html">Rot&nbsp;Wei&szlig;&nbsp;59&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="bw61muelheim.html">Blau&nbsp;Wei&szlig;&nbsp;61&nbsp;M&uuml;lheim</a>&nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="ksc71saarn.html">KSC&nbsp;71&nbsp;Saarn</a> &nbsp;&nbsp;- &nbsp;&nbsp;
-<a href="jugend.html">SKG&nbsp;Jugend</a>
-<font size="1"><hr></font></font></p></h1></div>
-<script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
+<!-- End Google Analytics -->      
+<body>
+    <a href="#content" class="sr-only">Skip to main content</a>
+    <div class="insert-skg-template-here" template="my.tpl.html"></div>
+    <div class="insert-skg-template-here" template="sportheader.tpl.html"></div>
 
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Templates austauschen etc. -->
+    <script src="js/skg.js"></script>
 
 <body>
 
-
-
-
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
 </html>

@@ -1,0 +1,9 @@
+<IfModule mod_deflate.c>
+<FilesMatch "\\.(html|css|js|xml|php|txt)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+</IfModule>
+
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+</ifModule>
